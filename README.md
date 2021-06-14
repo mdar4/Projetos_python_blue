@@ -19,3 +19,4 @@ Se a pessoa responder positivamente a:
 - Entre 3 e 4 como "Cúmplice"
 - 5 como "Assassino".
 - Caso contrário, ele será classificado como "Inocente".
+##
