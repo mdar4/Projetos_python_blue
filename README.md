@@ -1,4 +1,4 @@
-# Projetos Python da Blue EdTech
+# Projetos Semanais Python - Blue EdTech 💙
 Projetos elaborados durante o curso de Lógica de Programação com Python na Blue EdTech.
 
 ## 01 - Detetive
