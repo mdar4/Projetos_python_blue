@@ -26,7 +26,8 @@ while True:
         sleep(1)
         print('O computador está escolhendo...')
         sleep(2)
-        print(f'O computador escolheu {escolha}.') 
+        print(f'O computador escolheu {escolha}.')
+        sleep(1)
       # Configurando escolhas do computador
         if escolha == 'Papel':
           print('Papel embrulhou Pedra !')
@@ -43,6 +44,7 @@ while True:
         print('O computador está escolhendo...')
         sleep(2)
         print(f'O computador escolheu {escolha}.')
+        sleep(1)
         if escolha == 'Pedra':
           print('Papel embrulhou Pedra !')
           jogador += 1
@@ -58,6 +60,7 @@ while True:
         print('O computador está escolhendo...')
         sleep(2)
         print(f'O computador escolheu {escolha}.')
+        sleep(1)
         if escolha == 'Pedra':
           print('Pedra quebrou Tesoura !')
           pc += 1
