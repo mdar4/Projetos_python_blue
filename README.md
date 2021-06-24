@@ -21,8 +21,8 @@ Se a pessoa responder positivamente a:
 - Caso contrário, ele será classificado como "Inocente".
    
   | Projeto | Skill | Nota |
-  | -----| -----|-----|
-  |<a href="https://colab.research.google.com/drive/1re36Lc0ik38EIZhWIeXuVSFbQ-NzXJQj#scrollTo=kpmNV8YHSYdr">Detetive</a>| Python | 10 |
+  | :---:| :---:|:---:|
+  |<a href="https://colab.research.google.com/drive/1re36Lc0ik38EIZhWIeXuVSFbQ-NzXJQj#scrollTo=kpmNV8YHSYdr" target="_blank">Detetive</a>| Python | 10 |
 ##
 ## 02 - Jokeipô
 
@@ -36,6 +36,6 @@ Utilizando os conceitos aprendidos até estruturas de repetição, crie um progr
 - Perguntar se o Jogador quer jogar novamente, se sim inicie volte a escolha de quantidade de rodadas, se não finalize o programa.
 
   | Projeto | Skill | Nota |
-  | -----| -----|-----|
-  |<a href="https://colab.research.google.com/drive/1flnVq0L4i2FjxVsb-bHhNNmAkkG8Lyi8#scrollTo=hIvSlM1l1oRP">Jokenpô</a>| Python | # |
+  | :---:| :---: |:---:|
+  |<a href="https://colab.research.google.com/drive/1flnVq0L4i2FjxVsb-bHhNNmAkkG8Lyi8#scrollTo=hIvSlM1l1oRP" target="_blank">Jokenpô</a>| Python | # |
 ##
