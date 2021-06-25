@@ -39,3 +39,19 @@ Utilizando os conceitos aprendidos até estruturas de repetição, crie um progr
   | :---:| :---: |:---:|
   |<a href="https://colab.research.google.com/drive/1flnVq0L4i2FjxVsb-bHhNNmAkkG8Lyi8#scrollTo=hIvSlM1l1oRP" target="_blank">Jokenpô</a>| Python | # |
 ##
+## 03 – Jogo de Dados
+
+Utilizando os conceitos aprendidos até dicionários, crie um programa onde 4 jogadores joguem um dado e tenham resultados aleatórios.
+
+O programa tem que:
+
+- Perguntar quantas rodadas você quer fazer;
+- Guardar os resultados dos dados em um dicionário.
+- Ordenar esse dicionário, sabendo que o vencedor tirou o maior número no dado.
+- Mostrar no final qual jogador ganhou mais rodadas e foi o grande campeão.
+
+  | Projeto | Skill | Nota |
+  | :---:| :---: |:---:|
+  |<a href="#" target="_blank">Jogo de Dados</a>| Python | # |
+
+##
