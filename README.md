@@ -80,4 +80,4 @@ Sua função votacao() tem que calcular e mostrar:
 
   | Projeto | Skill | Nota |
   | :---:| :---: |:---:|
-  |<a href="#" target="_blank">Jogo de Dados</a>| Python | # |
+  |<a href="#" target="_blank">Simulador de Votação</a>| Python | # |
