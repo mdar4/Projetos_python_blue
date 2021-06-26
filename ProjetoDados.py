@@ -60,8 +60,20 @@ for c in range(rod):
         print(f'{i+1}° lugar: {v[0]} com {v[1]}.') 
         sleep(1)
     print()
+    print('*' * 40)
     clear()
-print('*' * 40)
+    
+print('E O GRANDE VENCEDOR FOI ...')
+sleep(2)
+if vit3 < vit1 > vit2 and vit1 > vit4:
+  print(f'O Player 1 venceu com {vit1} vitórias.')
+elif vit3 < vit2 > vit1 and vit2 > vit4:
+  print(f'O Player 2 venceu com {vit2} vitórias.')
+elif vit2 < vit3 > vit1 and vit3 > vit4:
+  print(f'O Player 3 venceu com {vit3} vitórias.')
+elif vit3 < vit4 > vit1 and vit4 > vit2:
+  print(f'O Player 4 venceu com {vit4} vitórias.')
+print()
 print(f'''
 O Player 1 teve {vit1} vitórias.
 O Player 2 teve {vit2} vitórias.
