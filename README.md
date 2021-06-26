@@ -70,7 +70,7 @@ escolher de 1 a 5 (crie 3 candidatos para a votação):
 - 1, 2 ou 3 - Votos para os respectivos candidatos
 - 4 - Voto Nulo
 - 5 - Voto em Branco
-- 
+
 Sua função votacao() tem que calcular e mostrar:
 
 - O total de votos para cada candidato;
