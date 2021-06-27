@@ -52,7 +52,7 @@ O programa tem que:
 
   | Projeto | Skill | Nota |
   | :---:| :---: |:---:|
-  |<a href="#" target="_blank">Jogo de Dados</a>| Python | # |
+  |<a href="https://colab.research.google.com/drive/1OR-5oYkQQsp-eqgZ1_OaIGEOXSklwFeQ#scrollTo=zOsT7P6T7IZz" target="_blank">Jogo de Dados</a>| Python | # |
 
 ##
 ## 04 - Simulador de votação:
