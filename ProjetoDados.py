@@ -44,7 +44,7 @@ while resp != 'N':
         print('Valores sorteados: ')
         for k, v in jogo.items():
             print(f'{k} tirou {v} no dado.')
-        sleep(1)
+            sleep(1)
         # Validando o vencedor de cada Rodada
         if (jogo['Player3'] < jogo['Player1'] > jogo['Player2']) and jogo['Player1'] > jogo['Player4'] :
             vit1 +=1
@@ -55,7 +55,7 @@ while resp != 'N':
         elif (jogo['Player3'] < jogo['Player4'] > jogo['Player2']) and jogo['Player4'] > jogo['Player1'] :
             vit4 += 1
         else:
-            empates = jogo - (vit1,vit2,vit3,vit4) # Contador de empates
+            empates = jogo - (vit1+vit2+vit3+vit4) # Contador de empates
         placar = sorted(jogo.items(), key=itemgetter(1), reverse = True) # Para ordenar do maior resultado para o menor
 
         print('-*' * 40)
@@ -75,6 +75,13 @@ while resp != 'N':
         break
 print('E O GRANDE VENCEDOR FOI ...')
 sleep(2)
+print('.', end=' ') # Dramatização do resultado rs ^^
+sleep(1)
+print('.', end=' ')
+sleep(1)
+print('.', end=' ')
+sleep(1)
+print()
 # Validando o vencedor
 if vit3 < vit1 > vit2 and vit1 > vit4:
   print(f'O Player 1 venceu com {vit1} vitórias.')
@@ -84,14 +91,37 @@ elif vit2 < vit3 > vit1 and vit3 > vit4:
   print(f'O Player 3 venceu com {vit3} vitórias.')
 elif vit3 < vit4 > vit1 and vit4 > vit2:
   print(f'O Player 4 venceu com {vit4} vitórias.')
+else:
+    print('Houve um empate.')
 print()
 # Validando o número de vitórias de cada Jogador
-print(f'''
-O Player 1 teve {vit1} vitórias.
-O Player 2 teve {vit2} vitórias.
-O Player 3 teve {vit3} vitórias.
-O Player 4 teve {vit4} vitórias.
-\n
-Tivemos {empates} empates.
 
-''')
+# print(f'''
+# O Player 1 teve {vit1} vitórias.
+# O Player 2 teve {vit2} vitórias.
+# O Player 3 teve {vit3} vitórias.
+# O Player 4 teve {vit4} vitórias.
+# \n
+# Tivemos {empates} empates.
+
+# ''')
+resp = str(input('Deseja ver o placar final?[S/N]: ')).strip().upper()[0]
+if resp not in 'SN':
+    print('Digite apenas S ou N.')
+if resp == 'S':
+    print(f'''
+     _____________________
+    |    **  PLACAR  **   |
+    |_____________________|
+    |Player 1 | {vit1} vitórias|
+    |Player 2 | {vit2} vitórias|
+    |Player 3 | {vit3} vitórias|
+    |Player 4 | {vit4} vitórias|
+    |_____________________|
+    |   Tivemos {empates} empates |
+    |_____________________|
+    
+    Fim de Jogo ^^
+    ''')
+else:
+  print('Fim de Jogo ^^')
