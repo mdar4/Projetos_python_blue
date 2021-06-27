@@ -16,6 +16,7 @@ import random #Lib para realizar sorteio de números aleatórios
 from operator import itemgetter # lib para organizar items da list()
 
 vit1 = vit2 = vit3 = vit4 = empates = 0  # Declarando vitórias e empates
+resp = None
 
 print('''
     VAMOS JOGAR DADOS ?
@@ -29,42 +30,49 @@ print('''
         |_______|/
 ''')
 sleep(2)
-rod = int(input('Número de rodadas: ')) # Declarando o número de rodadas.
-print()
-clear()
-# Cada Jogador terá um valor sorteado através da lib Random
-for c in range(rod):
-    jogo = {'Player1': random.randint(1,6),
-            'Player2': random.randint(1,6),
-            'Player3' : random.randint(1,6),
-            'Player4': random.randint(1,6)}
-    placar = list()
-    print('Valores sorteados: ')
-    for k, v in jogo.items():
-     print(f'{k} tirou {v} no dado.')
-    sleep(1)
-    # Validando o vencedor de cada Rodada
-    if (jogo['Player3'] < jogo['Player1'] > jogo['Player2']) and jogo['Player1'] > jogo['Player4'] :
-        vit1 +=1
-    elif (jogo['Player3'] < jogo['Player2'] > jogo['Player1']) and jogo['Player2'] > jogo['Player4'] :
-        vit2 +=1
-    elif (jogo['Player2'] < jogo['Player3'] > jogo['Player1']) and jogo['Player3'] > jogo['Player4'] :
-        vit3 +=1
-    elif (jogo['Player3'] < jogo['Player4'] > jogo['Player2']) and jogo['Player4'] > jogo['Player1'] :
-        vit4 += 1
-    else:
-      empates = jogo - (vit1,vit2,vit3,vit4) # Contador de empates
-    placar = sorted(jogo.items(), key=itemgetter(1), reverse = True) # Para ordenar do maior resultado para o menor
-
-    print('-*' * 40)
-    print('   ==== Ranking ===')
-    for i, v in enumerate(placar): 
-        print(f'{i+1}° lugar: {v[0]} com {v[1]}.') 
-        sleep(1)
+while resp != 'N':
+    rod = int(input('Número de rodadas: ')) # Declarando o número de rodadas.
     print()
-    print('*' * 40)
     clear()
+    # Cada Jogador terá um valor sorteado através da lib Random
+    for c in range(rod):
+        jogo = {'Player1': random.randint(1,6),
+                'Player2': random.randint(1,6),
+                'Player3' : random.randint(1,6),
+                'Player4': random.randint(1,6)}
+        placar = list()
+        print('Valores sorteados: ')
+        for k, v in jogo.items():
+            print(f'{k} tirou {v} no dado.')
+        sleep(1)
+        # Validando o vencedor de cada Rodada
+        if (jogo['Player3'] < jogo['Player1'] > jogo['Player2']) and jogo['Player1'] > jogo['Player4'] :
+            vit1 +=1
+        elif (jogo['Player3'] < jogo['Player2'] > jogo['Player1']) and jogo['Player2'] > jogo['Player4'] :
+            vit2 +=1
+        elif (jogo['Player2'] < jogo['Player3'] > jogo['Player1']) and jogo['Player3'] > jogo['Player4'] :
+            vit3 +=1
+        elif (jogo['Player3'] < jogo['Player4'] > jogo['Player2']) and jogo['Player4'] > jogo['Player1'] :
+            vit4 += 1
+        else:
+            empates = jogo - (vit1,vit2,vit3,vit4) # Contador de empates
+        placar = sorted(jogo.items(), key=itemgetter(1), reverse = True) # Para ordenar do maior resultado para o menor
 
+        print('-*' * 40)
+        print('   ==== Ranking ===')
+        for i, v in enumerate(placar): 
+            print(f'{i+1}° lugar: {v[0]} com {v[1]}.') 
+            sleep(1)
+        print()
+        print('*' * 40)
+        clear()
+    while True:
+        resp = str(input('Deseja jogar novamente? [S/N]: ')).strip().upper()[0]
+        if resp in 'SN':
+            break
+        print('Digite apenas S ou N.')
+    if resp == 'N':
+        break
 print('E O GRANDE VENCEDOR FOI ...')
 sleep(2)
 # Validando o vencedor
