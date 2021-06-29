@@ -38,7 +38,7 @@ Utilizando os conceitos aprendidos até estruturas de repetição, crie um progr
 
   | Projeto | Skill | Nota |
   | :---:| :---: |:---:|
-  |<a href="https://colab.research.google.com/drive/1flnVq0L4i2FjxVsb-bHhNNmAkkG8Lyi8#scrollTo=hIvSlM1l1oRP" target="_blank">Jokenpô</a>| Python | # |
+  |<a href="https://colab.research.google.com/drive/1flnVq0L4i2FjxVsb-bHhNNmAkkG8Lyi8#scrollTo=hIvSlM1l1oRP" target="_blank">Jokenpô</a>| Python | 10 |
 ##
 ## 03 – Jogo de Dados
 
