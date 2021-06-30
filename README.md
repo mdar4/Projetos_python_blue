@@ -1,5 +1,6 @@
 # Projetos Semanais Python - Blue EdTech 💙
 Projetos elaborados durante o curso de Lógica de Programação com Python na Blue EdTech.
+<p><b>Atenção ! </b>Todos os projetos concluídos possuem uma âncora para o Colab. Segue o README.md </p>
 
 ## 01 - Detetive
 
@@ -37,7 +38,7 @@ Utilizando os conceitos aprendidos até estruturas de repetição, crie um progr
 
   | Projeto | Skill | Nota |
   | :---:| :---: |:---:|
-  |<a href="https://colab.research.google.com/drive/1flnVq0L4i2FjxVsb-bHhNNmAkkG8Lyi8#scrollTo=hIvSlM1l1oRP" target="_blank">Jokenpô</a>| Python | # |
+  |<a href="https://colab.research.google.com/drive/1flnVq0L4i2FjxVsb-bHhNNmAkkG8Lyi8#scrollTo=hIvSlM1l1oRP" target="_blank">Jokenpô</a>| Python | 10 |
 ##
 ## 03 – Jogo de Dados
 
