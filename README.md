@@ -21,9 +21,9 @@ Se a pessoa responder positivamente a:
 - 5 como "Assassino".
 - Caso contrário, ele será classificado como "Inocente".
    
-  | Projeto | Skill | Nota |
-  | :---:| :---:|:---:|
-  |<a href="https://colab.research.google.com/drive/1re36Lc0ik38EIZhWIeXuVSFbQ-NzXJQj#scrollTo=kpmNV8YHSYdr" target="_blank">Detetive</a>| Python | 10 |
+  | Projeto | Skill | Nota | Conhecimentos |
+  | :---:| :---:|:---:| :---:
+  |<a href="https://colab.research.google.com/drive/1re36Lc0ik38EIZhWIeXuVSFbQ-NzXJQj#scrollTo=kpmNV8YHSYdr" target="_blank">Detetive</a>| Python | 10 | If / Elif / Else |
 ##
 ## 02 - Jokeipô
 
@@ -36,9 +36,9 @@ Utilizando os conceitos aprendidos até estruturas de repetição, crie um progr
 - Determinar quem foi o grande campeão de acordo com a quantidade de vitórias de cada um (computador e jogador);
 - Perguntar se o Jogador quer jogar novamente, se sim inicie volte a escolha de quantidade de rodadas, se não finalize o programa.
 
-  | Projeto | Skill | Nota |
-  | :---:| :---: |:---:|
-  |<a href="https://colab.research.google.com/drive/1flnVq0L4i2FjxVsb-bHhNNmAkkG8Lyi8#scrollTo=hIvSlM1l1oRP" target="_blank">Jokenpô</a>| Python | 10 |
+  | Projeto | Skill | Nota | Conhecimentos |
+  | :---:| :---: |:---:| :---: |
+  |<a href="https://colab.research.google.com/drive/1flnVq0L4i2FjxVsb-bHhNNmAkkG8Lyi8#scrollTo=hIvSlM1l1oRP" target="_blank">Jokenpô</a>| Python | 10 | For / While / While True |
 ##
 ## 03 – Jogo de Dados
 
@@ -51,9 +51,9 @@ O programa tem que:
 - Ordenar esse dicionário, sabendo que o vencedor tirou o maior número no dado.
 - Mostrar no final qual jogador ganhou mais rodadas e foi o grande campeão.
 
-  | Projeto | Skill | Nota |
-  | :---:| :---: |:---:|
-  |<a href="https://colab.research.google.com/drive/1OR-5oYkQQsp-eqgZ1_OaIGEOXSklwFeQ#scrollTo=zOsT7P6T7IZz" target="_blank">Jogo de Dados</a>| Python | # |
+  | Projeto | Skill | Nota | Conhecimento |
+  | :---:| :---: |:---:| :---:
+  |<a href="https://colab.research.google.com/drive/1OR-5oYkQQsp-eqgZ1_OaIGEOXSklwFeQ#scrollTo=zOsT7P6T7IZz" target="_blank">Jogo de Dados</a>| Python | 10 | Listas e Dicionários |
 
 ##
 ## 04 - Simulador de votação:
@@ -79,6 +79,7 @@ Sua função votacao() tem que calcular e mostrar:
 - O total de votos em branco;
 - Qual candidato venceu a votação
 
-  | Projeto | Skill | Nota |
-  | :---:| :---: |:---:|
-  |<a href="#" target="_blank">Simulador de Votação</a>| Python | # |
+  | Projeto | Skill | Nota | Conhecimentos |
+  | :---:| :---: |:---:| :---: |
+  |<a href="#" target="_blank">Simulador de Votação</a>| Python | # | Funções |
+  ##
