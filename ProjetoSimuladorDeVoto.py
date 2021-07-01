@@ -31,7 +31,7 @@ def leiaInt(m):
 def autoriza_voto():
     from datetime import date # Lib para atualizar a data atual no programa
     anoAtual = date.today().year # Retorna o Ano Atual
-    ano = int(input('Ano de Nascimento: '))
+    ano = leiaInt('Ano de Nascimento: ')
     idade = anoAtual - ano
     
     if idade < 16:
@@ -46,50 +46,56 @@ def autoriza_voto():
 
 # Função de voto 
 def votacao(voto):
-    voto = None
-    jose = paulo = joao =  nulo = branco = 0
-    while voto != 0:
-        while True : # Validando se o eleitor é ou não apto para a votação
-            if autoriza_voto() == 'Voto não autorizado':
-                print(f'Eleitor abaixo da idade necessária para voto válido.')
-            else:
+    voto = ''
+    jose = maria = joao =  nulo = branco = 0
+
+    while True : # Validando se o eleitor é ou não apto para a votação
+        if autoriza_voto() == 'Voto não autorizado.':
+            print(f'Eleitor abaixo da idade necessária para voto válido.')
+        else:
+            while voto != 0:
+    
+                print('''
+                Escolha sua opção de voto:
+
+                [1] - José
+                [2] - Maria
+                [3] - João
+                [4] - Nulo
+                [5] - Branco
+                
+                OU 
+
+                [0] - Para sair
+                [6] - Para cancelar
+                ''')
+                # Validando o voto
+                voto = leiaInt('Vote: ')
+                while True : # Prevenção de erro
+                    if  voto >= 0 and voto <= 6:
+                        break
+                    else:
+                        print('Opção inválida.')
+                    voto = leiaInt(('Vote: '))
+                if voto == 1 :
+                    print('Você votou no José')
+                    jose += 1
+                elif voto == 2 :
+                    print('Você votou na Maria')
+                    maria += 1
+                elif voto == 3 :
+                    print('Você votou no João')
+                    joao +=1
+                elif voto == 4 :
+                    print('Você votou Nulo')
+                    nulo += 1
+                elif voto == 5 :
+                    print('Você votou em Branco')
+                    branco += 1
+                elif voto == 6 :
+                    voto = leiaInt('Vote: ')
+            if voto == 0 :
                 break
-        
-        print('''
-        Escolha sua opção de voto:
-
-        [1] - José
-        [2] - Maria
-        [3] - João
-        [4] - Nulo
-        [5] - Branco
-        
-        OU 
-
-        [0] - Para sair
-        [6] - Para cancelar
-        ''')
-        # Validando o voto
-        voto = leiaInt('Vote: ')
-        if voto == 1 and voto == '1':
-            print('Você votou no José')
-            jose += 1
-        elif voto == 2 and voto =='2':
-            print('Você votou na Maria')
-            paulo += 1
-        elif voto == 3 and voto =='3':
-            print('Você votou no João')
-            maria +=1
-        elif voto == 4 and voto == '4':
-            print('Você votou Nulo')
-            nulo += 1
-        elif voto == 5 and voto == '5':
-            print('Você votou em Branco')
-            branco += 1
-        elif voto == 6 and voto == '6':
-            voto = leiaInt('Vote: ')
-        elif voto == 0 and voto == '0':
-            break
 
         
 
