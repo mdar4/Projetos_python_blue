@@ -17,6 +17,15 @@ from time import sleep # Lib para temporizar ações e dar efeito
 def linhas():
     print('*' * 30)
 
+def apto():
+    print('Precisamos saber se você é apto ao voto.')
+    print()
+    while True:
+        if autoriza_voto() == 'Voto não autorizado.':
+            print('Voto negado.')
+        else:
+            break
+
 # Função que valida apenas números inteiros
 def leiaInt(m):
     valido = False
@@ -63,6 +72,7 @@ def confirmar():
             confirmar()
         elif confirma == 7 :
             voto = leiaInt('Vote novamente: ')
+            confirmar()
         elif confirma == 6 :
             pass
 
@@ -112,26 +122,31 @@ def votacao(voto):
                     print('Você votou no José')
                     sleep(1)
                     jose += 1
+                    apto()
                 elif voto == 2 :
                     confirmar()
                     print('Você votou na Maria')
                     sleep(1)
                     maria += 1
+                    apto()
                 elif voto == 3 :
                     confirmar()
                     print('Você votou no João')
                     sleep(1)
                     joao +=1
+                    apto()
                 elif voto == 4 :
                     confirmar()
                     print('Você votou Nulo')
                     sleep(1)
                     nulo += 1
+                    apto()
                 elif voto == 5 :
                     confirmar()
                     print('Você votou em Branco')
                     sleep(1)
                     branco += 1
+                    apto()
                 
             if voto == 0 :
                 print( 'Fim da Votação')
@@ -192,3 +207,4 @@ print()
 print('Precisamos saber se você é apto ao voto.')
 print()
 print(votacao(autoriza_voto))
+
