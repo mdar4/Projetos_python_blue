@@ -81,5 +81,5 @@ Sua função votacao() tem que calcular e mostrar:
 
   | Projeto | Skill | Nota | Conhecimentos |
   | :---:| :---: |:---:| :---: |
-  |<a href="#" target="_blank">Simulador de Votação</a>| Python | # | Funções |
+  |<a href="https://colab.research.google.com/drive/1yPP5Hu2uFEeoR5uYhifh6g3I0yt2_tTO#scrollTo=b6LCzTq64rHR" target="_blank">Simulador de Votação</a>| Python | # | Funções |
   ##
