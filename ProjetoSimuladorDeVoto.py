@@ -12,9 +12,7 @@ else:
 
 from time import sleep # Lib para temporizar ações e dar efeito
 
-
 # --------------------------- Funções ---------------------------------
-
 # Função de linhas para separar blocos de códigos no console
 def linhas():
     print('*' * 30)
@@ -60,7 +58,10 @@ def confirmar():
         
         ''')
         confirma = leiaInt('Escolha: ')
-        if confirma == 7 :
+        if confirma <6 or confirma > 7:
+            print(('Opção inválida!'))
+            confirmar()
+        elif confirma == 7 :
             voto = leiaInt('Vote novamente: ')
         elif confirma == 6 :
             pass
@@ -131,7 +132,7 @@ def votacao(voto):
                     print('Você votou em Branco')
                     sleep(1)
                     branco += 1
-                clear()
+                
             if voto == 0 :
                 print( 'Fim da Votação')
 
@@ -164,14 +165,30 @@ def votacao(voto):
                  ______________________
                 |       Percentual     |
                 |----------------------|
-                |   {(jose+maria+ joao) * nulo/100}% foram Nulos   |
-                |  {(jose +maria+joao) * branco/100}% foram em Branco|
+                |  {(jose+maria+ joao) * nulo/100}% foram Nulos   |
+                |{(jose +maria+joao) * branco/100}% foram em Branco |
                 |______________________|
             
                 ''')
-                return 'Fim das eleições'
+
+                if maria < jose > joao:
+                    return f'José foi o vencedor com {jose} votos.'
+                elif jose < maria >joao:
+                    return f'Maria foi vencedora com {maria} votos.'
+                elif maria< joao > jose:
+                    return f'João foi o vencedor com {joao} votos.'
+                else:
+                    return 'Não houve vencedor, teremos Segundo Turno.'
+                    
+                print()
                 break
 
 # --------------------------- Programa principal ---------------------------------
-
+clear()
+linhas()
+print('---------- ELEIÇÕES ----------')
+linhas()
+print()
+print('Precisamos saber se você é apto ao voto.')
+print()
 print(votacao(autoriza_voto))
