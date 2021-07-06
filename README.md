@@ -1,5 +1,5 @@
 # Projetos Semanais Python - Blue EdTech 💙
-Projetos elaborados durante o curso de Lógica de Programação com Python na Blue EdTech.
+Projetos elaborados durante o Módulo 1 de Lógica de Programação com Python na Blue EdTech.
 <p><b>Atenção ! </b>Todos os projetos concluídos possuem uma âncora para o Colab. Segue o README.md </p>
 
 ## 01 - Detetive
